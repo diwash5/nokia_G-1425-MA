@@ -13,8 +13,8 @@ pressing any buttons
 
 it prompts for username and password
 
-Username : telecomadmin
-password : nE7jA%5m
+> Username : telecomadmin
+> Password : nE7jA%5m
 
 
 here we can press ? to get help
