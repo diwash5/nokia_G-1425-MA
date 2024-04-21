@@ -103,22 +103,81 @@ OperatorID is responsible for Changing configs . I've found that ```RILT``` will
 we can set it by
 ```ritool set OperatorID RILT```
 
+
 It is best to keep a backup of this dump.
+ 
+ ```go```to Continue the boot process
+
+Now the web is active . if it isn't you may need to restart a few times or even reset by using command ```reset```
+
+## Shell Authentication
+If the Web is not Active We can get inside from shell to get access to the router
+After pressing ```go```or just router to boot . After 5-7 minutes We get access to ABS User CLI which is pretty bad 
+```
+  enable    Turn on privileged mode command
+  help      Description of the interactive help system
+  hw_nat    platform special network commands,eg. hg_nat -g
+  ifconfig  ifconfig is used to configure, or view the configuration of, a network interface.
+  ip        show / manipulate routing, devices, policy routing and tunnels
+  list      Print command list
+  nslookup  The nslookup command is used to query Internet name servers interactively for information
+  ping      Send echo messages
+  ps        Scan a host, print all open ports
+  route     show / manipulate the IP routing table
+  show      system display
+  top       Provide a view of process activity in real time
+```
+
+
+use ```enable``` now ```help```
+
+
+```
+  configure  Configuration from vty interface
+  disable    Turn off privileged mode command
+  exit       Exit current mode and down to previous mode
+  help       Description of the interactive help system
+  list       Print command list
+  reboot     Reboot system.
+  shell      start shell, need to input the user and password
+  show       Show information from vty interface
+  terminal   Set terminal line parameters
+```
 
 ## WEB AUTHENTICATION
 
-Now the web is active . It should be at 192.168.1.1 when in RILT and 192.168.254.254 in other operatorID
+It should be at 192.168.1.1 when in RILT and 192.168.254.254 in other operatorID
 
 ```
-User : classicadmin
+Username : classicadmin
 Password : Cr3d3nti@lofNok!aONT0061_P@SSW)RD
+```
+The username and password for Non-Classictech routers seems to be
 
 ```
+Username : CMCCAdmin
+Password : aDm8H%MdA
+```
+
 there is user level username and password but is very limited .
 ```
-user : admin
+username : admin
 password : admin
 ```
+
+## Telnet
+
+login as classicadmin then visit the site ```<yourrouterip>/system.cgi?telnet``` and toggle the switch
+Telnet will be available at port ```2333```
+
+Logging into telnet . 
+```
+Username : user
+Password : 00000000
+```
+
+## Getting the Config
+
 
 
 
