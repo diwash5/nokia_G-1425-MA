@@ -6,10 +6,10 @@ Opening the Back of the router , There is a serial Port to connect to. After con
 The baudrate is 115200
 
 refer to bootlog here
-
+```
   GE Rext AnaCal Done! (4)(0x1c)
   Press enter in 3 secs to enter boot command mode.
-  
+```
 pressing any buttons.it prompts for username and password
 
 ```
