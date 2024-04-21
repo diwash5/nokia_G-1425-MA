@@ -99,7 +99,7 @@ BoardID:             G1425MA
 
 The above is actually my now current config cause i already lost the original . Some are Borrowed and Some were found in logs after.
 if the BoardID is wrong , the router Wont bootup . there are some options we may look after.
-OperatorID is responsible for Changing configs . I've found that ```RILT``` will Turn on the WEB as well as will be on English. We can also choose ```CMCC``` which is in Chinese .
+OperatorID is responsible for Changing configs . I've found that ```RILT``` will Turn on the WEB as well as will be on English. We can also choose ```CMCC``` and ```JSSC``` which is in Chinese .
 
 we can set it by
 ```ritool set OperatorID RILT```
