@@ -191,7 +191,7 @@ form telnet you can just ```cfgcli dump ```
 whereas from web you can go to ```<yourrouterip>/dumpdatamodel.cgi```
 
 
-[Myconfig](https://github.com/diwash5/nokia_G-1425-MA/blob/main/fullconfig.xml)  
+[My config](https://github.com/diwash5/nokia_G-1425-MA/blob/main/fullconfig.xml)  
 
 ### Restoring the Config
 
