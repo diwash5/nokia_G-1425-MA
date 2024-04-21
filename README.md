@@ -50,6 +50,7 @@ httpd                               Start Web Server
 
 ```
 most things here aren't very useful but ritool 
+we can dump by ```ritool dump```
 
 # ritool dump
 ```
@@ -96,4 +97,11 @@ BoardID:             G1425MA
 
 The above is actually my now current config cause i already lost the original . Some are Borrowed and Some were found in logs after.
 if the BoardID is wrong , the router Wont bootup . there are some options we may look after.
-I've tried 
+OperatorID is responsible for Changing configs . I've found that ```RILT``` will Turn on the WEB as well as will be on English. We can also choose ```CMCC``` which is in Chinese .
+
+we can set it by
+```ritool set OperatorID RILT```
+
+IT is best to keep a backup of this dump.
+
+
