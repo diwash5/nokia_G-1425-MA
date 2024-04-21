@@ -7,7 +7,7 @@ I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it
 Opening the Back of the router , There is a serial Port to connect to. After connecting to the router The following is the bootlog
 The baudrate is 115200
 
-refer to bootlog here
+refer to [bootlog](https://github.com/diwash5/nokia_G-1425-MA/blob/main/bootlog.log) here
 ```
   GE Rext AnaCal Done! (4)(0x1c)
   Press enter in 3 secs to enter boot command mode.
