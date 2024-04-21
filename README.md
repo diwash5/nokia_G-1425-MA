@@ -193,9 +193,8 @@ whereas from web you can go to ```<yourrouterip>/dumpdatamodel.cgi```
 
 ### Restoring the Config
 
-I dont have a Way to restore the config file but you can use the shell to change expects of it . you'll need to factory reset each time to apply them though
+I dont have a Way to restore the config file but you can use the shell to change expects of it . you'll need to factory reset each time to apply them though.
 To get
-
 ``` 
 cfgcli -g InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.SSHEnable
 ```
