@@ -145,8 +145,9 @@ use ```enable``` now ```help```
 ```
 
 use the command ```shell```which prompts for password . Put in
-```LA(ImvZx%8```
-
+```
+LA(ImvZx%8
+```
  viola , you're already on shell . We will talk about changing configs later on.
 ## WEB AUTHENTICATION
 
