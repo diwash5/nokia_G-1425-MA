@@ -1,6 +1,6 @@
 # Nokia G-1425-MA
 
-Read Beforehand : https://git.lsd.cat/g/nokia-keygen and https://gist.github.com/thedroidgeek/80c379aa43b71015d71da130f85a435a
+Read Beforehand : [Nokia Keygen](https://git.lsd.cat/g/nokia-keygen) and [Decrypt Tool](https://gist.github.com/thedroidgeek/80c379aa43b71015d71da130f85a435a)
 
 
 I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it was inservice.
