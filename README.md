@@ -102,6 +102,18 @@ OperatorID is responsible for Changing configs . I've found that ```RILT``` will
 we can set it by
 ```ritool set OperatorID RILT```
 
-IT is best to keep a backup of this dump.
+It is best to keep a backup of this dump.
+
+## WEB AUTHENTICATION
+
+Now the web is active . It should be at 192.168.1.1 when in RILT and 192.168.254.254 in other operatorID
+
+```
+User : classicadmin
+Password : Cr3d3nti@lofNok!aONT0061_P@SSW)RD
+
+```
+
+
 
 
