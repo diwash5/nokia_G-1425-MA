@@ -11,9 +11,10 @@ refer to bootlog here
   
 pressing any buttons.it prompts for username and password
 
-> Username : telecomadmin
-> Password : nE7jA%5m
-
+```
+ Username : telecomadmin
+ Password : nE7jA%5m
+```
 
 here we can press ? to get help
 
@@ -26,6 +27,7 @@ most things here aren't very useful but ritool
 
 
 ```
+
 ?                                   Print out help messages.
 help                                Print out help messages.
 reset                               reset.
@@ -53,6 +55,7 @@ cpufreq <freq num> / <m> <n>        Set CPU Freq <156~450>(freq has to be multip
 ipaddr <ip addr>                    Change modem's IP.
 httpd                               Start Web Server
 
-```                            Start Web Server
+```
+
 
 
