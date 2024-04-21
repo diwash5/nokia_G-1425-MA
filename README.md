@@ -1,7 +1,9 @@
 # Nokia G-1425-MA
 
-I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it was inservice.
+Read Beforehand : https://git.lsd.cat/g/nokia-keygen and https://gist.github.com/thedroidgeek/80c379aa43b71015d71da130f85a435a
 
+
+I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it was inservice.
 Opening the Back of the router , There is a serial Port to connect to. After connecting to the router The following is the bootlog
 The baudrate is 115200
 
