@@ -191,6 +191,8 @@ form telnet you can just ```cfgcli dump ```
 whereas from web you can go to ```<yourrouterip>/dumpdatamodel.cgi```
 
 
+[Myconfig](https://github.com/diwash5/nokia_G-1425-MA/blob/main/fullconfig.xml)  
+
 ### Restoring the Config
 
 I dont have a Way to restore the config file but you can use the shell to change expects of it . you'll need to factory reset each time to apply them though.
