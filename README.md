@@ -144,6 +144,10 @@ use ```enable``` now ```help```
   terminal   Set terminal line parameters
 ```
 
+use the command ```shell```which prompts for password . Put in
+```LA(ImvZx%8```
+
+ viola , you're already on shell . We will talk about changing configs later on.
 ## WEB AUTHENTICATION
 
 It should be at 192.168.1.1 when in RILT and 192.168.254.254 in other operatorID
