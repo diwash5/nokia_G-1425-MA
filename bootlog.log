@@ -1,0 +1,1011 @@
+IC
+Xtal:1
+DDR3 init.
+DRAMC init done.
+Calculate size.
+DRAM size=512MB
+Set new TRFC.
+ddr-1200
+
+7528DRAMC V1.6 (0)
+Press 'x' or 'b' key in 1 secs to enter or skip bootloader upgrade.
+led_init ...
+led_all_mode ...
+
+
+EN7528 at Mon Jun 21 10:11:52 CST 2021 version 1.1 free bootbase
+
+Set SPI Clock to 40 Mhz
+spi_nand_probe: mfr_id=0x98, dev_id=0xeb
+Using Flash ECC.
+Detected SPI NAND Flash : _SPI_NAND_DEVICE_ID_TC58CVG1S3HRAIJ, Flash Size=0x1000                                                                                                             0000
+bmt pool size: 143
+BMT & BBT Init Success
+tclinux partition size = 0x1400000, real size = 0x1cbd000
+tclinux partition size < its real size
+tclinux_slave partition size = 0x1400000, real size = 0xec228edb
+tclinux_slave partition size < its real size
+
+Invalid NSB Power GPIO, just return and don't turn on Power LED
+TR068_LED ...
+
+  GE Rext AnaCal Done! (4)(0x1c)
+Press enter in 3 secs to enter boot command mode.
+..............................
+
+
+==> 1650
+
+Invalid NSB Power GPIO, just return and don't turn on Power LED
+********cur flag info*************
+active = 1
+curimg = 1
+startok = 1
+count = 5
+********new flag info*************
+active = 1
+curimg = 1
+startok = 0
+count = 5
+magic=0x33524448
+len=30134272
+
+ slave tclinux.bin crc check OK!#######select1  0x2300000
+Decompress to 80002000 free_mem_ptr=83000000 free_mem_ptr_end=807B0000
+from main
+*********run kernel 1********
+trx_header_len = 256
+kernel_size = 2424832
+Uncompressing [LZMA] ...  done.
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 3.18.21 (buildmgr@AONT57) (gcc version 4.6.3 (Buildroot 2015.08.1-                                                                                                             g0b1c64e) ) #11 SMP Mon Jun 21 10:14:11 CST 2021
+__l2cmem:0x8052c400, _l2cmem_end:0x8052c400, l2cmem_size:0 Bytes
+memsize:432MB
+EcoNet EN7528 SOC prom init
+bootconsole [early0] enabled
+CPU0 revision is: 0001992f (MIPS 1004Kc)
+Determined physical RAM map:
+ memory: 1affe000 @ 00002000 (usable)
+Wasting 64 bytes for tracking 2 unused pages
+Zone ranges:
+  Normal   [mem 0x00002000-0x1affffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00002000-0x1affffff]
+Initmem setup node 0 [mem 0x00002000-0x1affffff]
+Detected 3 available secondary CPU(s)
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+PERCPU: Embedded 9 pages/cpu @81eed000 s5952 r8192 d22720 u36864
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 109726
+Kernel command line:
+log_buf_len individual max cpu contribution: 4096 bytes
+log_buf_len total cpu_extra contributions: 12288 bytes
+log_buf_len min size: 16384 bytes
+log_buf_len: 32768 bytes
+early log buf free: 14208(86%)
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Writing ErrCtl register=00066710
+Readback ErrCtl register=00066710
+nmi base is 81f84200
+Memory: 410120K/442360K available (5289K kernel code, 216K rwdata, 972K rodata,                                                                                                              224K init, 21330K bss, 32240K reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Hierarchical RCU implementation.
+NR_IRQS:64
+
+tc3162_time_init: Init bus timeout and watchdog
+set rbus timeout as NMI then enable it
+CPU frequency 900.00 MHz
+plat_time_init: Entered, mips_timer_ack ptr is [80008224]
+ Using 200.000 MHz high precision timer.
+r4k_clockevent_init: setup_irq OK, irq is [52]
+console [ttyS0] enabled
+console [ttyS0] enabled
+bootconsole [early0] disabled
+bootconsole [early0] disabled
+Calibrating delay loop... 591.87 BogoMIPS (lpj=2959360)
+pid_max: default: 32768 minimum: 301
+Security Framework initialized
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys debug
+34K sync es set to 0.
+Config7: 0x80090500
+launch: starting cpu1
+launch: cpu1 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU1 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 1: done.
+launch: starting cpu2
+launch: cpu2 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU2 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 2: done.
+launch: starting cpu3
+launch: cpu3 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU3 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 3: done.
+Brought up 4 CPUs
+NET: Registered protocol family 16
+PCIe 7528 PHY init
+PCIe driver version: 7528.1.20181122
+EN7528 pcie_init
+check pcie link up status:
+isRC0_LINKUP=1
+isRC1_LINKUP=1
+registering PCI controller with io_map_base unset
+Initializing Ecnt Event Netlink Socket
+Initializing Econet Event Netlink Socket nl_sk = 9ad58800
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x20000000-0x2fffffff]
+pci_bus 0000:00: root bus resource [io  0x1f600000-0x1f61ffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+pci 0000:00:01.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff]
+pci 0000:00:01.0: BAR 8: assigned [mem 0x20100000-0x202fffff]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff]
+pci 0000:00:00.0: PCI bridge to [bus 01]
+pci 0000:00:00.0:   bridge window [mem 0x20000000-0x200fffff]
+pci 0000:02:00.0: BAR 0: assigned [mem 0x20100000-0x201fffff 64bit pref]
+pci 0000:02:00.0: BAR 2: assigned [mem 0x20200000-0x20203fff 64bit pref]
+pci 0000:02:00.0: BAR 4: assigned [mem 0x20204000-0x20204fff 64bit pref]
+pci 0000:00:01.0: PCI bridge to [bus 02]
+pci 0000:00:01.0:   bridge window [mem 0x20100000-0x202fffff]
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+Switched to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP: reno registered
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+
+ mt7512_pcie_fixup: 0x1438 = 20000014
+ mt7512_pcie_fixup: 0x3438 = 20100015
+ mt7512_pcie_rc1_retrain: 80 = 0147dc12 80 = 01608c12
+RC1 Link Traing Result: 10120008
+TC3162 hardware watchdog module loaded.
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+msgmni has been set to 801
+io scheduler noop registered (default)
+ttyS0 at I/O 0xbfbf0003 (irq = 5, base_baud = 7200) is a TC3162
+ECNT ring buffer init success
+brd: module loaded
+loop: module loaded
+
+SPI Flash Init Start
+Found no SPI flash device
+IS_SPIFLASH=0x0, IS_NANDFLASH=0x1, (0xBFA10114)=0x6)
+Set SPI Clock to 40 Mhz
+spi_nand_probe: mfr_id=0x98, dev_id=0xeb
+Using Flash ECC.
+Detected SPI NAND Flash : _SPI_NAND_DEVICE_ID_TC58CVG1S3HRAIJ, Flash Size=0x1000                                                                                                             0000
+spi nand flash
+tc3162: flash device 0x01000000 at 0x1c000000
+EN7512 mtd init: spi nand probe enter
+[spi_nand_setup] : Enter
+nand: device found, Manufacturer ID: 0x98, Chip ID: 0xeb
+nand: Toshiba _SPI_NAND_DEVICE_ID_TC58CVG1S3HRAIJ
+nand: 256MiB, SLC, page size: 2048, OOB size: 64
+nand_scan_ident ok
+[spi_nand_setup]: chip size =  0x10000000, erase_shift=0x11
+bmt pool size: 143
+BMT & BBT Init Success
+########nsb_add_partitions#########
+main kernel size = 2359296
+main rootfs szie=27787264
+slave kernel size = 2359296
+slave rootfs szie=27787264
+nsb sync master mtd partitions finished ,kernel size=2359296 mtd size=2359296 ro                                                                                                             otfs size =27787264 mtd size = 27787264
+nsb sync slave mtd partitions finished ,kernel size=2359296 kernel size=2359296                                                                                                              rootfs size =27787264 mtd size = 27787264
+Creating 17 MTD partitions on "EN7512-SPI_NAND":
+0x000000000000-0x000000040000 : "bootloader"
+0x000000040000-0x000000080000 : "romfile"
+0x000000080000-0x0000002c0000 : "kernel"
+0x0000002c0000-0x000001d40000 : "rootfs"
+0x000002300000-0x000002540000 : "kernel_slave"
+0x000002540000-0x000003fc0000 : "rootfs_slave"
+0x000004580000-0x0000045c0000 : "bosa"
+0x0000045c0000-0x000004600000 : "ri"
+0x000004600000-0x000004640000 : "flag"
+0x000004640000-0x000004680000 : "flagback"
+0x000004680000-0x000005080000 : "config"
+0x000005080000-0x00000d080000 : "data"
+0x00000d080000-0x00000d680000 : "oopsfs"
+0x00000d680000-0x00000e080000 : "log"
+0x000000080000-0x000002300000 : "nsb_master"
+0x000002300000-0x000004580000 : "nsb_slave"
+0x000000000000-0x00000eb00000 : "all_flash"
+active = 1
+asb_curimg = 1
+asb_startok = 0
+asb_count = 5
+start rootfs
+select img B 5
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+USB driver version: 7528.2.20181130
+7528 USB PHY config, enable port0 port1
+port 0 u2_slew_rate_cal_7528
+FM_OUT value = 137(0x00000089)
+SR calibration value = 4
+port 1 u2_slew_rate_cal_7528
+FM_OUT value = 136(0x00000088)
+SR calibration value = 4
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 1
+xhci-hcd xhci-hcd.0: irq 10, io mem 0x1fb90000
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 2
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+usbcore: registered new interface driver cdc_acm
+cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+usbcore: registered new interface driver usbserial
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial support registered for generic
+usbcore: registered new interface driver ch341
+usbserial: USB Serial support registered for ch341-uart
+usbcore: registered new interface driver cp210x
+usbserial: USB Serial support registered for cp210x
+usbcore: registered new interface driver cypress_m8
+usbserial: USB Serial support registered for DeLorme Earthmate USB
+usbserial: USB Serial support registered for HID->COM RS232 Adapter
+usbserial: USB Serial support registered for Nokia CA-42 V2 Adapter
+usbcore: registered new interface driver ftdi_sio
+usbserial: USB Serial support registered for FTDI USB Serial Device
+usbcore: registered new interface driver pl2303
+usbserial: USB Serial support registered for pl2303
+hidraw: raw HID events driver (C) Jiri Kosina
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (6408 buckets, 25632 max)
+ctnetlink v0.93: registering with nfnetlink.
+nf_tables: (c) 2007-2009 Patrick McHardy <kaber@trash.net>
+nf_tables_compat: (c) 2012 Pablo Neira Ayuso <pablo@netfilter.org>
+xt_time: kernel timezone is -0000
+ip_set: protocol 6
+IPv4 over IPsec tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update you                                                                                                             r scripts to load br_netfilter if you need this.
+8021q: 802.1Q VLAN Support v1.8
+tc3162ser_startup
+VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+Freeing unused kernel memory: 224K (80678000 - 806b0000)
+busybox init and set aff before console Init 0x7
+chmod: /userfs/profile.cfg: Read-only file system
+mknod: /dev/misc/fuse: No such file or directory
+/dev/misc/fuse create faild!
+UBI: attaching mtd10 to ubi1
+UBI: scanning is finished
+UBI: attached mtd10 (name "config", size 10 MiB) to ubi1
+UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+UBI: good PEBs: 80, bad PEBs: 0, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 2062/998, WL threshold: 4096, image sequence number                                                                                                             : 0
+UBI: available PEBs: 0, total reserved PEBs: 80, PEBs reserved for bad PEB handl                                                                                                             ing: 2
+UBI: background thread "ubi_bgt1d" started, PID 210
+UBI device number 1, total 80 LEBs (10158080 bytes, 9.6 MiUBI: attaching mtd13 t                                                                                                             o ubi2
+B), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+UBI: scanning is finished
+UBI: attached mtd13 (name "log", size 10 MiB) to ubi2
+UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+UBI: good PEBs: 80, bad PEBs: 0, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 1322/1039, WL threshold: 4096, image sequence numbe                                                                                                             r: 0
+UBI: available PEBs: 0, total reserved PEBs: 80, PEBs reserved for bad PEB handl                                                                                                             ing: 2
+UBI: background thread "ubi_bgt2d" started, PID 212
+UBI device number 2, total 80 LEBs (10158080 bytes, 9.6 UBI: attaching mtd11 to                                                                                                              ubi3
+MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+UBI: scanning is finished
+UBI: attached mtd11 (name "data", size 128 MiB) to ubi3
+UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+UBI: good PEBs: 1024, bad PEBs: 0, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 24/6, WL threshold: 4096, image sequence number: 0
+UBI: available PEBs: 0, total reserved PEBs: 1024, PEBs reserved for bad PEB han                                                                                                             dling: 2
+UBI: background thread "ubi_bgt3d" started, PID 214
+UBI device number 3, total 1024 LEBs (130023424 bytes, 124.0 MiB), available 0 L                                                                                                             EBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+UBIFS: background thread "ubifs_bgt1_0" started, PID 217
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 1, volume 0, name "configs"
+UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/20                                                                                                             48 bytes
+UBIFS: FS size: 8126464 bytes (7 MiB, 64 LEBs), journal size 1650688 bytes (1 Mi                                                                                                             B, 13 LEBs)
+UBIFS: reserved for root: 0 bytes (0 KiB)
+UBIFS: media format: w4/r0 (latest is w4/r0), UUID C6C8993B-8617-43D0-BE83-8DEFD                                                                                                             0BBD9D9, small LPT model
+1800
+10
+UBIFS: background thread "ubifs_bgt2_0" started, PID 227
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 2, volume 0, name "logs"
+UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/20                                                                                                             48 bytes
+UBIFS: FS size: 8126464 bytes (7 MiB, 64 LEBs), journal size 1650688 bytes (1 Mi                                                                                                             B, 13 LEBs)
+UBIFS: reserved for root: 0 bytes (0 KiB)
+UBIFS: media format: w4/r0 (latest is w4/r0), UUID 27AA568F-E91E-4186-AD48-E66EF                                                                                                             E700D10, small LPT model
+UBIFS: background thread "ubifs_bgt3_0" started, PID 229
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 3, volume 0, name "data"
+UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/20                                                                                                             48 bytes
+UBIFS: FS size: 127864832 bytes (121 MiB, 1007 LEBs), journal size 9023488 bytes                                                                                                              (8 MiB, 72 LEBs)
+UBIFS: reserved for root: 0 bytes (0 KiB)
+UBIFS: media format: w4/r0 (latest is w4/r0), UUID BB7E25E3-6F43-4F1A-AA6F-AFB6A                                                                                                             AA1CF85, small LPT model
+/usr/etc/buildinfo == /etc/buildinfo
+/usr/etc/buildinfo == /configs/buildinfo
+check build date done
+Copied 1 bytes from address 0x00000000 in flash to /logs/crash_info
+Erased 393216 bytes from address 0x00000000 in flash
+insmod mtdoops ...
+mtdoops: Attached to MTD device 12
+/usr/script/panic_mtdoops.sh: line 61: /sbin/rebootinfo_power: not found
+Kernel Logger init.
+install nand_drv driver!
+ri module install
+BoardInnerID=G1425MA.
+[hcfg] try to load /usr/hwconfig/G1425MA/hcfg.conf
+End: node_index = 122, HcfgNodeCnts = 122
+insmod board_dev module ...
+board_dev module install
+RILT
+RI
+RI
+1
+prepare led.conf for tcledctrl.ko in sdk_moudles.sh
+random: nonblocking pool is initialized
+===========tune parmeter===========
+insmod eth driver
+netif_napi_add() called with weight 256 on device lan_int2_if
+set qdma lan/wan ratelimit
+Exec. Successful
+Exec. Successful
+Exec. Successful
+insmod pon driver
+Exec. Successful
+Exec. Successful
+Exec. Successful
+Exec. Successful
+insmod hw_nat.ko
+done
+done
+====bind irq to cpu=====
+sh: ]: unknown operand
+insmod bandwidth
+*reg=000030f0 value:0000ff00
+*reg=000031f0 value:0000ff00
+*reg=000032f0 value:0000ff00
+*reg=000033f0 value:0000ff00
+*reg=000034f0 value:0000ff00
+*reg=000036f0 value:0000ff00
+there is 1 usb port on board
+/configs/bin_ac/ dir exists
+/configs/mtk7592/ dir exists
+mtk7592 RT30xxEEPROM.bin exists
+MT7592_Enhanced.bin exists
+/configs/mtk7612/ dir exists
+mtk7612 RT30xxEEPROM.bin exists
+MT7612_Enhanced.bin exists
+insmod wifi driver
+insmod mt7663_ap.ko
+/usr/etc/init.d/rcS: line 155: can't create /proc/sys/kernel/print-trace-signals                                                                                                             : nonexistent directory
+XX
+RI
+192.168.1.50
+brctl: bridge br0: File exists
+d4:4f:67:4c:94:3c
+LOGFILE=NBELeb20ca88
+/data/openjdk1.img
+mount jdk by flag success!!!
+1
+MTK DSP support
+init mod-ksocket
+init mod-acodec
+init mod-foip3
+sh: 1: unknown operand
+LANTIQ32001
+MTK_7528
+pid 467's current affinity mask: 1
+pid 467's new affinity mask: 8
+pid 472's current affinity mask: 1
+pid 472's new affinity mask: 8
+pid 489's current affinity mask: 1
+pid 489's new affinity mask: 8
+pid 490's current affinity mask: 1
+pid 490's new affinity mask: 8
+pid 492's current affinity mask: 1
+pid 492's new affinity mask: 8
+enable core dump
+card 3FE49170AAAA use bosa ux3320
+***load ux3320 bosa***
+insmod: can't insert '/lib/driver/soc.ko': File exists
+DEBUG INFO REG_STA_CTRL1:0x80
+
+====================@Voice starting@=================
+====================@Voice inited@=================
+++++++++++++++++++delete  osgi_admin+++++++++++++++++++++++++
+++++++++++++++start syslogd++++++++++++++++++
+###syslog_boot.sh###
+syslog data files created.
+boot syslogd.
+syslogd starting
+klogd starting
+syslog storageMode is flash
++++++start reboot_monitor+++++
+[Write]pin_no 24  write value is 0
+[Write]pin_no 25  write value is 1
+[Write]pin_no 26  write value is 0
+There is 1 USB port no board, insmod USB drivers
+Starting Dropbear SSH server: sh: /usr/sbin/macfilterd: not found
+sh: /sbin/usrbh: not found
+sh: /sbin/ctae: not found
+Starting wifihostd: wifihostd.
+sh: /sbin/mesh: not found
+Rebinding voice and WiFI IRQ...
+dropbear.
+Interface doesn't accept private ioctl...
+set (8BE2): Network is down
+start mdev for usb devices
+####process_msg_thread pid is 566
+nff tools already installed, make sure it is enabled.
+start nff
+starting nff ...
+killall: nffd: no process killed
+killall: shellinaboxd: no process killed
+start nff successfully
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 failed
+recv cmd, type=1
+csMsgFd:3
+can't load custom config
+passwd can be empty for CM OPID
+[isInitializedParser]: Ready to get into startOmciRerangeCheckTimer()
+>>>>>tttt:OMCIManagerAPI.cc:isInitializedMgr:331---   0m:32s: 193ms
+********OMCI Config Data Begin****************
+****ONU Type     : HGU
+****onu mode    : 3
+****CUSTOMER ID    : 1
+****omci working mode    : 2
+****factory mode: 0
+****max lan num : 4
+****max wifi num: 2
+****max wifi id start: 4
+****check wifi state: no
+****1G port num: 4
+****FE port num: 0
+****OPID: RILT
+****voip stream map port: 7
+****port 0 config by omci: 0
+****port 1 config by omci: 0
+****port 2 config by omci: 0
+****port 3 config by omci: 0
+****port 4 config by omci: 0
+****port 5 config by omci: 0
+****dscp to Pbit for untag Config By OMCI: no
+****ntp time get by omci: no
+****support double tag rules: yes
+****accept all uni services: yes
+****config uni isolation: yes
+****config lpt: yes
+****uni rate limit: yes
+****pon reg type: 4
+****china eqip info format: no
+****omci pppoe auth: no
+****omciV2 config: yes
+****untag wan config: no
+****uni port4 config: yes
+****slid 2 cfgmgr visiable: no
+****voip Pbit Map: no
+****fiberhome ge/fe query: no
+********OMCI Config Data End****************
+   user_port    class       domain
+===================================
+      1          ETH         HGU-DOMAIN
+      2          ETH         HGU-DOMAIN
+      3          ETH         HGU-DOMAIN
+      4          ETH         HGU-DOMAIN
+      1         WIFI         HGU-DOMAIN
+      2         WIFI         HGU-DOMAIN
+      7         POTS         SFU-DOMAIN
+===================================
+phy0 id test success
+phy1 id test success
+phy2 id test success
+phy3 id test success
+BOSA module access OK!
+PartNumber oflt_pn = 3FE49170AAAA
+wifi 2.4G chip test success!
+wifi 5G chip test success!
+wifi chip test success
+phy0 id test success
+phy1 id test success
+phy2 id test success
+phy3 id test success
+BOSA module access OK!
+PartNumber oflt_pn = 3FE49170AAAA
+wifi 2.4G chip test success!
+wifi 5G chip test success!
+wifi chip test success
+InitPortStream() maxPort=6, enet=6,moca=0
+InitPortStream:: ONU type is HGU
+Use extend flow service
+hal_eth_configure_port_domain to be implemented for mtk....
+hal_eth_cfg_port_forwarding_mode to be implemented for mtk....
+hal_eth_configure_port_domain to be implemented for mtk....
+hal_eth_cfg_port_forwarding_mode to be implemented for mtk....
+hal_eth_configure_port_domain to be implemented for mtk....
+hal_eth_cfg_port_forwarding_mode to be implemented for mtk....
+hal_eth_configure_port_domain to be implemented for mtk....
+hal_eth_cfg_port_forwarding_mode to be implemented for mtk....
+[qos_itf_init_tsched]: call init tsched
+hal_itf_flow.c:hal_stream_get_mcast_vlan_action_id is not implemented for mtk.
+hal_itf_flow.c:hal_stream_get_mcast_vlan_action_id is not implemented for mtk.
+hal_itf_flow.c:hal_stream_get_mcast_vlan_action_id is not implemented for mtk.
+hal_itf_flow.c:hal_stream_get_mcast_vlan_action_id is not implemented for mtk.
+hal_itf_flow.c:hal_stream_get_mcast_vlan_action_id is not implemented for mtk.
+hal_itf_flow.c:hal_stream_create_mcast_ethflow is not implemented for mtk.
+>>>>>tttt:OMCIManagerAPI.cc:isInitializedMgr:441---   0m:32s: 283ms
+configFilePathDynamic: /configs/omci/ALUOmciLib.cfg
+configFilePathStatic: /bin/ALUOmciLib.cfg
+capFilePathDynamic: /configs/omci/ALUONTCapability.cfg
+capFilePathStatic: /bin/ALUONTCapability.cfg
+>>>>>tttt:OMCI_CVP_PROXY_INIT_START:OmciMain.cc:main:2081---   0m:32s: 339ms
+>>>>>tttt:OMCI_CVP_PROXY_INIT_SUCCESS:OmciMain.cc:main:2088---   0m:32s: 349ms
+RTNETLINK answers: File exists
+>>>>getSwVersionInfo(),imageBank:0,version:3FE49218JJHL03
+BusyBox v1.16.0 () multi-call binary.
+
+Usage: brctl [OPTIONS] [FILE]
+
+Uncompress FILE (or standard input)
+
+Options:
+        -c      Write to standard output
+        -f      Force
+
+>>>>getSwVersionInfo(),imageBank:1,version:3FE49218JJHL03
+OMCI_LIB: OmciMain:: Calling getSwImageInfo()swdl_get_image_status: cur image = 1
+swdl_get_image_status: image 0 isvalid = 1
+swdl_get_image_status: cur image = 1
+swdl_get_image_status: image 1 isvalid = 1
+Exec. Successful
+Exec. Successful
+IP or mask changed!
+>>>>getSwVersionInfo(),imageBank:0,version:3FE49218JJHL03
+rm: can't remove '/tmp/cgi_session': No such file or directory
+RTNETLINK answers: File exists
+rm: can't remove '/tmp/cgi_session': No such file or directory
+>>>>getSwVersionInfo(),imageBank:1,version:3FE49218JJHL03
+ploam.cc:read_sn_from_RI is implemented for mtk,sn:NBELFFFFFFEB20FFFFFFCAFFFFFF88
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=0
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=1
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=2
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=3
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=4
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=5
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=6
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=7
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=8
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=9
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=10
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=11
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=12
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=13
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=14
+[qos_itf_get_tsched_info]: get tsched info, g_tschedNum=15
+ds_sec=-1
+ Inside GatewayUniSupp_1Itf::GatewayUniSupp_1Itf constructor
+Value of bit position is 5
+processQueryWanForDhcpd portId=10,cfg_getObj failed
+processQueryWanForDhcpd portId=11,cfg_getObj failed
+processQueryWanForDhcpd portId=12,cfg_getObj failed
+Value of bit position is 0
+[PwrShedding] dataPwrTime <0>,cesPwrTime <0>,voicePwrTime <0>,videoPwrTime <0>,restoreTime <0>
+>>>>setIANAPortId(VeipId=3585,IANAAssignportId=0
+ create auto instanmce gateway uni ME succesful
+[Tr069MgmtServer]: Create one instance of Tr069MgmtServer!
+processQueryWanForDhcpd portId=13,cfg_getObj failed
+ create auto instanmce gateway uni ME succesful
+configUniDot1xParams(portId=101) unsupported port
+ create auto instanmce gateway uni ME succesful
+configUniDot1xParams(portId=102) unsupported port
+ create auto instanmce gateway uni ME succesful
+configUniDot1xParams(portId=103) unsupported port
+configUniDot1xParams(portId=104) unsupported port
+OMCI_LIB: VOIP: indexID: 2
+OMCI_LIB: No of voip  ports after assignment is :1
+Value of bit position is 145
+Value of bit position is 186
+OMCI_LIB:ALL PQs (US+DS) created
+processQueryWanForDhcpd portId=14,cfg_getObj failed
+processQueryWanForDhcpd portId=15,cfg_getObj failed
+>>>>>tttt:OmciMain.cc:main:3693---   0m:34s: 620ms
+processQueryWanForDhcpd portId=16,cfg_getObj failed
+processQueryWanForDhcpd portId=17,cfg_getObj failed
+processQueryWanForDhcpd portId=18,cfg_getObj failed
+swdl_get_image_status: cur image = 1
+swdl_get_image_status: image 0 isvalid = 1
+swdl_get_image_status: cur image = 1
+swdl_get_image_status: image 1 isvalid = 1
+killall: monitor.wan.bin: no process killed
+g_eth_port_mode[0] = 1
+###1#onu type 2######
+###4#onu type 2######
+[debug] onuType.type = HGU
+[INIT] start init RG slow path. isHGU:1,numPort: 4
+max port num: 4sal_netModelInit:L1410 [DEBUG]: to be implemented for brcm
+[INIT] exit init RG slow path
+ModuleName: G-1425-MA
+stl_WanCommonIntfCfgObject - status=NoSignal
+type = 0
+enter lanhost_notifyEntryChanged().
+send CS_MSG_LANHOSTS_ENTRY_CHANGED to EID(168).
+>>>>getSwVersionInfo(),imageBank:0,version:3FE49218JJHL03
+killall: vtysh: no process killed
+printf ResetShortLongTimeout > /proc/button/reset/mode
+printf 0 > /proc/button/reset/reset_timer
+printf 10 > /proc/button/reset/reset_timer_end
+printf 10 > /proc/button/reset/short_timer
+printf 999 > /proc/button/reset/short_timer_end
+printf 20 > /proc/button/reset/long_timer
+printf 999 > /proc/button/reset/long_timer_end
+printf 2 > /proc/button/reset/reset_led_mode
+printf 2 > /proc/button/reset/short_led_mode
+printf 2 > /proc/button/reset/long_led_mode
+printf 0 > /proc/button/reset/timeout_led_duringtime
+printf 3 > /proc/button/ledswitch/ledswitch_timer
+configResetButtonOnBoot Reset Button config done!
+printf 0 > /proc/button/wlan/wlan_timer;
+configResetButtonOnBoot: Wlan Button config done!
+Content-type:text/html;charset=UTF-8
+Cache-Control:private,max-age=0;
+/sbin/wkick.cgi
+Location:/
+
+>>>>getSwVersionInfo(),imageBank:1,version:3FE49218JJHL03
+OMCI_LIB: Got swImageInfo = 1e, standby = 0
+postParserInitialized
+ploam.cc:read_sn_from_RI is implemented for mtk,sn:NBELFFFFFFEB20FFFFFFCAFFFFFF88
+sal_ponMacOpt.cc:SAL_startPloam is implemented for mtk,sn:NBELEB20CA88
+recv cmd, type=1
+EXEC_CMD: [ls /tmp/wlan/1/]EXEC_CMD: [ls /tmp/wlan/2/]EXEC_CMD: [ls /tmp/wlan/3/]EXEC_CMD: [ls /tmp/wlan/4/]EXEC_CMD: [ls /tmp/wlan/5/]EXEC_CMD: [ls /tmp/wlan/6/]EXEC_CMD: [ls /tmp/wlan/7/]EXEC_CMD: [ls /tmp/wlan/8/]unsupported msg type 268445442(10002702)
+####onu mode = 3####
+###eth 4##wifi 2###
+value1 = TRUE
+value1 = TRUE
+mkdir: can't create directory '/tmp': File exists
+value1 = TRUE
+value1 = TRUE
+value2 = 2
+
+ startVoiceApp: VOICE is configured as TR069 manually
+cfg_bootVoice::cmd:(cd /tmp ; ln -s /sbin/cvp_sip voip ; ./voip &) will execute!
+unsupported msg type 268445442(10002702)
+msgId=3
+
+ arpwan: ARP/NDP detect demo is Running ...
+nd detect NumberOfEntries:0
+add a new ndp config:WANConnection:,Interval:60,NumberOfRepetitions:3,Enable:0
+
+ arpwan: wanDetectTask loop is Running ...
+GM:hal_igmp_set_uni_port_type uniport 1 type 1GM:hal_igmp_set_uni_port_type uniport 2 type 1GM:hal_igmp_set_uni_port_type uniport 3 type 1GM:hal_igmp_set_uni_port_type uniport 4 type 1[debug] onuType.type = HGU
+[debug] isOnuHGU, start dns proxy
+Line 2192 get_options ▒ (null)
+[Jan 01 08:00:39] radvd (1689): version 2.17 started
+initMemoryMngt(): potsNum = 1, adjust_syssemi_size = 692224, adjust_sysheap_size = 614400
+
+ common_pools: need 468528 bytes memory
+ msgbuf_pool_appl: need 325556 bytes memoryredirect_mode_set 162 mode=2
+cvpd.cmd not found.SipwStartup, fetched maxPrtZips=1
+iptables: No chain/target/match by that name.
+
+ the stack size is too small(16384), we chenge to 131072 now!
+ the stack size is too small(16384), we chenge to 131072 now!=== MsgHandler::initTable : partNumber =3FE49170AAAA ===
+port map is udLineMaps_aluonu_ct  {1,2}
+
+ GVHW initialization, current onu_maxlines 1 is
+ip6tables: No chain/target/match by that name.
+VDSP_GetInstance:285
+[Adam] Change log level to (EVA_LOG_ERR).
+[GDI] Change log level to (EVA_LOG_ERR).
+
+#sipcommon_root start
+
+#InitCommon start
+
+ the stack size is too small(16384), we chenge to 131072 now!
+ the stack size is too small(100000), we chenge to 131072 now!
+ the stack size is too small(100000), we chenge to 131072 now!
+ the stack size is too small(16384), we chenge to 131072 now!
+ the stack size is too small(16384), we chenge to 131072 now!leave tm_event()
+[sys] yapi registerContainer(cid): 4
+
+#pmc start
+
+#vm start
+voice_diagnosis_init: SIP
+#linetest start
+
+SLID Disabled
+ the stack size is too small(16384), we chenge to 131072 now!
+ the stack size is too small(16384), we chenge to 131072 now!
+ the stack size is too small(16384), we chenge to 131072 now!pid 1673's current affinity mask: 7
+pid 1673's new affinity mask: 8
+
+ the stack size is too small(100000), we chenge to 131072 now!
+ the stack size is too small(100000), we chenge to 131072 now!
+ the stack size is too small(30000), we chenge to 131072 now!
+ the stack size is too small(30000), we chenge to 131072 now!iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+unsupported msg type 268445442(10002702)
+unsupported msg type 268445442(10002702)
+eneter into cfg_bootQosSrv!
+spc:XX
+spc: Going to boot spc
+spc: finish booting ubusd & spc
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+dnsproxy pid 1683
+rts_LanLoopbackDetectionObject: enable: 1, period: 5, cancel_period: 300, vlantag: untagged, EthernetType: 0xFFFA
+vlan_num: 1, vlan(use 4096 to stand for untag):
+vlan[0]: 4096,
+[INIT] lanhostsd starting...
+test thread fucn1=MlmeThread exit
+test thread fucn1=RTPCICmdThread exit
+test thread fucn1=wsc_write_dat_file_thread exit
+*reg=0000211c value:6a010101
+*reg=0000221c value:6a010101
+Prepare MSG_PMC_CALL_HISTORY_REPORT_TIME_CONFIG_REQ: call_history_report_call =0
+*reg=0000231c value:6a010101
+*reg=0000241c value:6a010101
+*reg=0000001c value:60166016
+OmciMgr: cvp initialized report received:succeeded!
+*reg=0000001c value:60166016
+*reg=00000020 value:00160016
+*reg=00000020 value:00160016
+*reg=00000024 value:04160216
+*reg=00000024 value:04160216
+*reg=000000a4 value:00160016
+*reg=000000a4 value:00160016
+
+ cfgmgr: cvp initialized report received:succeeded!portsNum=1
+lanhost interval:5000ms, offline:20000ms, delete:90000ms, fastoffline:0.
+bind: Cannot assign requested address
+Function cfg_initSecurity() is called
+insmod: can't read '/lib/modules/3.18.21/nf_defrag_ipv6.ko': No such file or directory
+insmod: can't read '/lib/modules/3.18.21/nf_conntrack_ipv6.ko': No such file or directory
+sh: can't create /proc/mwbind: nonexistent directory
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 success!
+1
+sh: can't create /proc/mwbind: nonexistent directory
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 success!
+version 1.3
+ra0       mac:[0x21610]:ffffffff
+ra0       mac:[0x21614]:ffffffff
+host: 127.0.0.1, cport: 1234
+Connect to server(127.0.0.1) failed: Connection refused
+1
+version 1.3
+1
+sh: can't create /proc/mwbind: nonexistent directory
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 success!
+Function cfg_bootSecurity() is called
+Function cfg_bootCMCCSecurity() is called
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+Function cfg_accessFilter() is called
+call empty_func macFilter.cpp:sal_setPolicy
+killall: macfilterd: no process killed
+insmod: can't read '/lib/modules/3.18.21/ip_tables.ko': No such file or directory
+insmod: can't read '/lib/modules/3.18.21/nf_defrag_ipv4.ko': No such file or directory
+insmod: can't read '/lib/modules/3.18.21/nf_conntrack_ipv4.ko': No such file or directory
+1
+insmod: can't read '/lib/modules/3.18.21/nf_nat.ko': No such file or directory
+insmod: can't read '/lib/modules/3.18.21/iptable_nat.ko': No such file or directory
+insmod: can't read '/lib/modules/3.18.21/nfnetlink_queue.ko': No such file or directory
+Function cfg_bootSSH() is called
+Function cfg_bootMWband() is called
+Starting Dropbear SSH server: /usr/sbin/dropbear is already running
+597
+csMsgFd:3
+chpasswd: unknown user user
+killall: telnetd: no process killed
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+Password for 'user-telnet' changed
+Password for 'root' changed
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+Function stl_CtBhBaiscInfObject() is called
+Function stl_NetDiagObject() is called
+Function stl_CtBhAnalysisObject() is called
+unsupported msg type 268445442(10002702)
+unsupported msg type 268445442(10002702)
+unsupported msg type 268445442(10002702)
+smart customer name: XX
+smart: boot pcmcm!
+smart: finish booting new service system!
+[cfg_bootActAfterBootUp]turn on LED_PWR!
+phy0 id test success
+phy1 id test success
+phy2 id test success
+phy3 id test success
+BOSA module access OK!
+PartNumber oflt_pn = 3FE49170AAAA
+wifi 2.4G chip test success!
+wifi 5G chip test success!
+wifi chip test success
+###############rts_crondtabObject#####################
+######stl_GASYObject called !######stl_WifidoginfoSource called !######stl_NoWifidoginfoSource called !start Security setting
+end Security setting
+all process have started,send msg to dhcpd
+unsupported msg type 268445442(10002702)
+sh: /sbin/qrdiagnosis: not found
+chmod: /tmp/7570_bob.conf: No such file or directory
+The home directory (/home/dws) of user dws is owned by root. change the owner now:
+chown dws /home/dws
+Get in plugin_check
+security setting finished
+XX
+RI
+###############rts_crondtabObject#####################
+cmd1 = sed -i '/^0 0 * * */d' /tmp/crond/root
+osgi_admin
+drwxrwxrwx    2 root     root           712 Jan  1 08:00 .
+-rwxr-xr-x    1 root     root          2150 Jun 21  2021 /etc/scripts/osgi_admin.sh
+Delete all traffic mirror rules before booting java!
+Command failed: Not found
+Delete all traffic forward rules before booting java!
+Command failed: Not found
+Delete all traffic http process rules before booting java!
+Command failed: Not found
+memory--->>>512m
+*************start JVM done***********************
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+/openjdk/jre/bin/java: line 1: syntax error: unexpected "("
+chmod: /tmp/qi_plug_msgq: No such file or directory
+enter mark2_tg_parse
+mark 1, mask 15
+enter mark2_tg_parse
+mark 1, mask 15
+enter mark2_tg_parse
+mark 1, mask 15
+enter mark2_tg_parse
+mark 1, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+enter mark2_tg_parse
+mark 2, mask 15
+enter mark2_tg_parse
+mark 2, mask 15
+enter mark2_tg_parse
+mark 2, mask 15
+enter mark2_tg_parse
+mark 2, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+1
+enter mark2_tg_parse
+mark 3, mask 15
+enter mark2_tg_parse
+mark 3, mask 15
+enter mark2_tg_parse
+mark 3, mask 15
+enter mark2_tg_parse
+mark 3, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 success!
+enter mark2_tg_parse
+mark 4, mask 15
+enter mark2_tg_parse
+mark 4, mask 15
+enter mark2_tg_parse
+mark 4, mask 15
+enter mark2_tg_parse
+mark 4, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+enter mark2_tg_parse
+mark 5, mask 15
+enter mark2_tg_parse
+mark 5, mask 15
+enter mark2_tg_parse
+mark 5, mask 15
+enter mark2_tg_parse
+mark 5, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+enter mark2_tg_parse
+mark 6, mask 15
+enter mark2_tg_parse
+mark 6, mask 15
+enter mark2_tg_parse
+mark 6, mask 15
+enter mark2_tg_parse
+mark 6, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+enter mark2_tg_parse
+mark 7, mask 15
+enter mark2_tg_parse
+mark 7, mask 15
+enter mark2_tg_parse
+mark 7, mask 15
+enter mark2_tg_parse
+mark 7, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+enter mark2_tg_parse
+mark 8, mask 15
+enter mark2_tg_parse
+mark 8, mask 15
+enter mark2_tg_parse
+mark 8, mask 15
+enter mark2_tg_parse
+mark 8, mask 15
+iptables: Bad built-in chain name.
+ip6tables: Bad built-in chain name.
+1
+
+host: 127.0.0.1, cport: 1234
+Connect to server(127.0.0.1) failed: Connection refused
+1
+set InternetGatewayDevice.DeviceInfo.SerialNumber=NBELEB20CA88 success!
+1
+Exec. Successful
+Exec. Successful
+pid 1121's current affinity mask: 8
+pid 1121's new affinity mask: 7
+pid 1199's current affinity mask: 8
+pid 1199's new affinity mask: f
+1
