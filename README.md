@@ -3,6 +3,7 @@
 I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it was inservice.
 
 Opening the Back of the router , There is a serial Port to connect to. After connecting to the router The following is the bootlog
+The baudrate is 115200
 
 refer to bootlog here
 
@@ -112,6 +113,11 @@ Now the web is active . It should be at 192.168.1.1 when in RILT and 192.168.254
 User : classicadmin
 Password : Cr3d3nti@lofNok!aONT0061_P@SSW)RD
 
+```
+there is user level username and password but is very limited .
+```
+user : admin
+password : admin
 ```
 
 
