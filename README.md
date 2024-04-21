@@ -1,4 +1,4 @@
-# Nokia_G-1425-MA
+# Nokia G-1425-MA
 
 I have a Nokia G-1425-MA from a NEPALESE ISP. The router is fully locked when it was inservice.
 
